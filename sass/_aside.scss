@@ -1,0 +1,95 @@
+.aside{
+    .aside_title{
+       h2{
+        text-align: center;
+        font-size: 30px;
+        color: #000;
+        padding-top: 150px;
+        padding-bottom: 85px;
+        font-weight: 700;
+       }
+    }
+
+    .aside_boxs{
+        display: flex;
+        grid-template-columns: 3fr;
+        justify-content: center;
+        gap: 30px;
+        .aside_box{
+            width: 370px;
+            height: 455px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; 
+            border-radius: 8px;
+            &:hover{
+                background-color:   #7caedd;
+                transition: all 0.5s linear;
+            }
+
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    h4{
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #000;
+
+                    }
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #000;
+                    }
+                }
+
+                .aside_footer{
+                    h3{
+                        color: #114E86;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    
+                }
+            
+        }
+    }
+}
+
+
+@media (max-width:1024px) {
+    .aside{
+        .aside_boxs{
+            display: grid;
+            grid-template-columns:2fr 2fr;
+        }
+    }
+    
+}
+
+@media (max-width:770px) {
+    .aside{
+        .aside_title{
+            h2{
+                font-size: 30px;
+            }
+        }
+        .aside_boxs{
+            display: grid;
+            grid-template-columns: 1fr;
+            .aside_box{
+                div{
+                    h4{
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
